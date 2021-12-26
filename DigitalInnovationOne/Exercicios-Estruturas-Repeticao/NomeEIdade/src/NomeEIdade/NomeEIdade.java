@@ -13,19 +13,35 @@ public class NomeEIdade {
     public static void main(String[] args) {
         
         Scanner ler = new Scanner(System.in);
-        String nome; int idade;
-               
+        
+         
+        
         while(true){
-            System.out.print("Insira o nome do aluno: ");
-            nome = ler.next();
-            if(nome.equals("0")){
-                break;
+            System.out.print("Insira o nome do Aluno: ");
+            String nome = ler.next();   
+             if(nome.equals("0")){
+                System.out.println("Programa Encerrado!");
+                break;               
+                       
             }else{
-            System.out.print("\nInsira agora,a idade do aluno: ");
-            idade = ler.nextInt();
-            }
+                 System.out.print("Insira a idade do Aluno: ");
+                 int idade = ler.nextInt();
+                 System.out.println("Nome do Aluno: " + nome);
+                 System.out.println("Idade do Aluno: " + idade);
+            }  
         }
-        System.out.print("\nVocê saiu do programa....");
-    }
-    
+
+// SOLUÇÃO DO PROFESSOR
+        /* while(true){
+             System.out.print("Insira o nome do aluno: ");
+             nome = ler.next();
+             if(nome.equals("0")){
+                 break;
+             }else{
+             System.out.print("\nInsira agora,a idade do aluno: ");
+             idade = ler.nextInt();
+             }
+         }
+         System.out.print("\nVocê saiu do programa....");*/
+    } 
 }
