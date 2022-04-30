@@ -1,0 +1,27 @@
+public class BomDia {
+	private BaseT baseProxima;
+	private String sexo;
+	private int hora;
+		
+	public void setProximo(BaseT nextBaseT) {
+		this.baseProxima = nextBaseT;
+	}
+
+	public void verificaSexo() {
+
+		if (sexo() == "M")
+			this.sexo = "Senhor";
+		else
+			this.sexo = "Senhora";
+	}
+
+	public void verificaArgs() {
+		if (hora() > 6 && hora() < 12) {
+			System.out.println(this.sexo + nome() + ", tenha um Bom Dia!");
+		} else {
+			System.out.println("Passando para classe 2...");
+			BaseT base = new BoaTarde();
+			//this.baseProxima.verificaArgs();
+		}
+	}
+}
