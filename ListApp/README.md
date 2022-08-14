@@ -1,3 +1,3 @@
 #  ListApp
 
-Add instructions for project developers here.
+Projeto para criar uma Lista de Tarefas que ainda está em desenvolvimento.
