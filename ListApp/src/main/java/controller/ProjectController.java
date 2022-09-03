@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import model.Project;
@@ -38,7 +39,7 @@ public class ProjectController {
              //Manda executar
              statement.execute();
              
-         } catch (Exception e) {
+         } catch (SQLException e) {
              throw new RuntimeException("Erro ao salvar o projeto" + e.getMessage(), e);
              
          }finally{
@@ -75,8 +76,8 @@ public class ProjectController {
              //Executa a query
              statement.execute();
              
-         } catch (Exception e) {
-            throw new RuntimeException("Erro ao atualizar o projeto " + e.getMessage(), e);
+         } catch (SQLException e) {
+            throw new RuntimeException("Erro ao atualizar o projeto. " + e.getMessage(), e);
              
          }finally{
              ConectionFactory.closeConnection(conexao, statement);
@@ -97,9 +98,9 @@ public class ProjectController {
              
              statement.execute();
              
-         } catch (Exception e) {
+         } catch (SQLException e) {
              
-             throw new RuntimeException("Erro ao remover o projeto" + e.getMessage(), e);
+             throw new RuntimeException("Erro ao remover o projeto. " + e.getMessage(), e);
              
          }finally{
              ConectionFactory.closeConnection(conexao, statement);
@@ -134,8 +135,8 @@ public class ProjectController {
                  
                  projects.add(project);
              }
-         } catch (Exception e) {
-             throw new RuntimeException("Erro ao inserir o projeto "+ e.getMessage(), e);
+         } catch (SQLException e) {
+             throw new RuntimeException("Erro ao inserir o projeto. "+ e.getMessage(), e);
              
          }  finally{
              

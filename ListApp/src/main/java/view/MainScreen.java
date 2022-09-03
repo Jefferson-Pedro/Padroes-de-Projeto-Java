@@ -265,8 +265,8 @@ public class MainScreen extends javax.swing.JFrame {
                 java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Boolean.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, true;
-            }
+                false, false, false, true
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
@@ -436,4 +436,4 @@ public class MainScreen extends javax.swing.JFrame {
 			
 		}
     }
-}
+
