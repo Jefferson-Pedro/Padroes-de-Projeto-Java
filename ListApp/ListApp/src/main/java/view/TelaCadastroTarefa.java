@@ -215,12 +215,13 @@ public class TelaCadastroTarefa extends javax.swing.JDialog {
             Task task = new Task();
             //task.setIdProject(projeto.getId()); //Setando a chave estrangeira
             
-            task.setIdProject(5);
+            task.setIdProject(6);
             task.setName(jTextFieldCorpoNome.getText());
             task.setDescription(jTextAreaCorpoDescricao.getText());
             task.setNotes(jTextAreaCorpoNotas.getText());
             task.setCompleted(false);
             
+            //Conversão de data
             SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy");
             Date data = null;
             data = dataFormatada.parse(jFormattedTextFieldCorpoPrazo.getText());

@@ -48,6 +48,7 @@ public class ProjectController {
                  
      }
      
+     //Atualiza um projeto
      public void updateProject (Project project){ 
          
          String sql = "UPDATE projects SET "
@@ -84,6 +85,7 @@ public class ProjectController {
          }
      }
      
+     //Deleta um projeto por ID
      public void deleteProjectById (int projectId){
          
          String sql = "DELETE FROM projects WHERE id = ?";
@@ -107,6 +109,7 @@ public class ProjectController {
          }
         }
      
+     //Carrega todos os projetos do banco de dados
      public List<Project> getAll(){
          
         String sql = "SELECT * FROM projects ";
