@@ -24,10 +24,7 @@ Para rodar com exito o projeto em sua máquina, siga estes passos:
 2- Entre na pasta raiz do projeto: <code>cd projeto-selecionado</code>
 
 
-```latex
-\newcommand{\todo}[1]{{\color{red}#1}}
 ```
-sendo seu uso da forma:
-```latex
-\todo{Coisa a ser feita}
+git clone https://github.com/Jefferson-Pedro/Padroes-de-Projeto-Java
 ```
+
