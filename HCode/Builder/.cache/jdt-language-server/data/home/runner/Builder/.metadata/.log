@@ -1,0 +1,4861 @@
+!SESSION 2024-01-20 14:34:42.292 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.5
+java.vendor=GraalVM Community
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED
+Command-line arguments:  --add-modules=ALL-SYSTEM --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED -data /home/runner/Builder/.cache/jdt-language-server/data/home/runner/Builder
+
+This is a continuation of log file /home/runner/Builder/.cache/jdt-language-server/data/home/runner/Builder/.metadata/.bak_0.log
+Created Time: 2024-01-20 14:35:39.837
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:39.838
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:35:40.029
+!MESSAGE BadLocationException
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:206)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOffset(AbstractDocument.java:877)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOffset(SynchronizableDocument.java:323)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:85)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:69)
+	at org.eclipse.jdt.ls.core.internal.corrections.DiagnosticsHelper.getStartOffset(DiagnosticsHelper.java:53)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:130)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:35:40.030
+!MESSAGE BadLocationException
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:206)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOffset(AbstractDocument.java:877)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOffset(SynchronizableDocument.java:323)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:85)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:69)
+	at org.eclipse.jdt.ls.core.internal.corrections.DiagnosticsHelper.getEndOffset(DiagnosticsHelper.java:38)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:131)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:35:40.032
+!MESSAGE BadLocationException
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.ListLineTracker.getLineOffset(ListLineTracker.java:206)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOffset(AbstractDocument.java:877)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOffset(SynchronizableDocument.java:323)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:85)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:69)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:972)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:40.049
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:45.605
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:45.701
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.082
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.128
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.139
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.609
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.682
+!MESSAGE 4 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:46.689
+!MESSAGE Validated 1. Took 159 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.002
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.029
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.080
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.105
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.187
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.192
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.195
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.201
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.203
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.280
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.283
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.289
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.295
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.384
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.431
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.481
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.484
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.691
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.780
+!MESSAGE Reconciled 1. Took 48 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.790
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.882
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.884
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.979
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:48.981
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.079
+!MESSAGE Reconciled 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.080
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.108
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.178
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.285
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.288
+!MESSAGE Reconciled 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.401
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.482
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.489
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.491
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.579
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.683
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.713
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.718
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:49.780
+!MESSAGE Reconciled 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.295
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.300
+!MESSAGE void is an invalid type for the variable co is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.301
+!MESSAGE 6 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.302
+!MESSAGE Validated 1. Took 120 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.584
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.638
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.641
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.672
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.814
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.824
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.831
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.902
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:50.985
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:51.383
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:51.385
+!MESSAGE void is an invalid type for the variable co is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:51.386
+!MESSAGE 6 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:51.392
+!MESSAGE Validated 1. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.211
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.285
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.379
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.380
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.385
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.641
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.677
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.693
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:52.706
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.016
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.053
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.070
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.074
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.085
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.182
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.278
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.278
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.284
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.481
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.487
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.500
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.906
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.907
+!MESSAGE void is an invalid type for the variable constructSedan is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.907
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:53.908
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.675
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.730
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.782
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.785
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.879
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.882
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.979
+!MESSAGE Reconciled 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:54.980
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.085
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.306
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.308
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.380
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.799
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.801
+!MESSAGE void is an invalid type for the variable constructSedan is of type VariableTypeCannotBeVoid
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.803
+!MESSAGE 6 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:55.803
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.248
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.695
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.803
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.804
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.804
+!MESSAGE Validated 1. Took 97 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:56.880
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:57.340
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:57.480
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:57.485
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:57.998
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:57.998
+!MESSAGE 4 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.079
+!MESSAGE Validated 1. Took 146 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.394
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.397
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.399
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.486
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.596
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.612
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.890
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.894
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.981
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.982
+!MESSAGE 4 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:58.985
+!MESSAGE Validated 1. Took 94 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.023
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.079
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.183
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.279
+!MESSAGE Reconciled 1. Took 59 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.579
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.698
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.778
+!MESSAGE 4 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.780
+!MESSAGE Validated 1. Took 99 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:35:59.889
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:00.491
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:00.493
+!MESSAGE 4 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:00.496
+!MESSAGE Validated 1. Took 117 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:00.979
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:00.995
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.027
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.028
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.378
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.484
+!MESSAGE Reconciled 1. Took 54 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.489
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.581
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.608
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.679
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.724
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.783
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.969
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:01.971
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.059
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.490
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.491
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.495
+!MESSAGE 5 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.496
+!MESSAGE Validated 1. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:02.501
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:03.863
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:03.870
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:03.912
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:03.981
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:03.998
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:04.043
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:04.474
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:04.485
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:04.487
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:04.488
+!MESSAGE Validated 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:05.587
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:05.984
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:07.371
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:08.375
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:08.418
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:08.426
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:08.512
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:08.716
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:09.026
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:09.038
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:09.044
+!MESSAGE Validated 1. Took 223 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:10.618
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:10.710
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:10.757
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:10.956
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:11.026
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:11.555
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:11.556
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:11.562
+!MESSAGE Validated 1. Took 132 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:11.821
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:12.397
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:12.444
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:12.462
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:12.487
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:12.888
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.005
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.008
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.010
+!MESSAGE Validated 1. Took 165 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.013
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.015
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.025
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.026
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.055
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.689
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.705
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.734
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.740
+!MESSAGE Validated 1. Took 249 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.833
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:13.923
+!MESSAGE Reconciled 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.393
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.411
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.412
+!MESSAGE Validated 1. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.490
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.558
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:14.574
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.136
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.186
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.202
+!MESSAGE Validated 1. Took 225 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.416
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.481
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.486
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.494
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.497
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.502
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.583
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.658
+!MESSAGE Reconciled 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:15.705
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.206
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.213
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.292
+!MESSAGE Validated 1. Took 194 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.324
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.327
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:16.517
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:17.755
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:17.879
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:17.978
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.002
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.086
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.178
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.188
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.202
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.279
+!MESSAGE Reconciled 1. Took 38 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.881
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.891
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:18.893
+!MESSAGE Validated 1. Took 211 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.402
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.442
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.865
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.866
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.867
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:19.906
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.178
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.276
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.777
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.780
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.782
+!MESSAGE Validated 1. Took 55 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.878
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.887
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:21.935
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.486
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.487
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.488
+!MESSAGE Validated 1. Took 99 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.592
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.601
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.679
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.681
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.779
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:22.909
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:23.285
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:23.286
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:23.287
+!MESSAGE Validated 1. Took 57 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:23.950
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:24.033
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:24.110
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:24.579
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:24.581
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:24.583
+!MESSAGE Validated 1. Took 70 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:25.458
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:25.498
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:25.514
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:25.895
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:25.978
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:26.094
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:26.095
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:26.097
+!MESSAGE Validated 1. Took 197 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:26.278
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:27.728
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:27.862
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:27.923
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:28.183
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:28.227
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:28.688
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:28.689
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:28.690
+!MESSAGE Validated 1. Took 60 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:29.711
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:37.451
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:37.542
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:37.863
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:37.903
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:37.921
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.387
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.478
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.488
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.492
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.493
+!MESSAGE Validated 1. Took 189 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:38.619
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.038
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.081
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.083
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.122
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.178
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.179
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.189
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.192
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.280
+!MESSAGE Reconciled 1. Took 53 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.513
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.527
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.623
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.832
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:40.885
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.319
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.320
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.322
+!MESSAGE Validated 1. Took 35 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.789
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.880
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.932
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.982
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:41.983
+!MESSAGE Reconciled 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.184
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.580
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.581
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.582
+!MESSAGE Validated 1. Took 196 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.880
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.894
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:42.984
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.082
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.194
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.200
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.280
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.678
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.883
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.885
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:43.886
+!MESSAGE Validated 1. Took 205 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:44.078
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:44.552
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:44.707
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:44.949
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.155
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.187
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.226
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.878
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.879
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:45.880
+!MESSAGE Validated 1. Took 252 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.387
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.403
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.407
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.480
+!MESSAGE Reconciled 1. Took 55 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.882
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.983
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.985
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:46.990
+!MESSAGE Validated 1. Took 108 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.079
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.083
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.580
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.580
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.581
+!MESSAGE Validated 1. Took 97 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:47.884
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:36:48.066
+!MESSAGE Index out of bounds
+!STACK 1
+Java Model Exception: Error in Java Model (code 980): Index out of bounds
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:162)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:977)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2024-01-20 14:36:48.067
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:48.326
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:36:48.328
+!MESSAGE Error while handling document change. URI: file:///home/runner/Builder/director/Director.java
+!STACK 0
+org.eclipse.text.edits.MalformedTreeException: End position lies outside document range
+	at org.eclipse.text.edits.TextEditProcessor.checkIntegrityDo(TextEditProcessor.java:180)
+	at org.eclipse.text.edits.TextEdit.dispatchCheckIntegrity(TextEdit.java:746)
+	at org.eclipse.text.edits.TextEditProcessor.performEdits(TextEditProcessor.java:153)
+	at org.eclipse.text.edits.TextEdit.apply(TextEdit.java:714)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleChanged(BaseDocumentLifeCycleHandler.java:430)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$6.run(BaseDocumentLifeCycleHandler.java:325)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didChange(BaseDocumentLifeCycleHandler.java:322)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didChange(JDTLanguageServer.java:766)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:48.478
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:36:48.480
+!MESSAGE Error while handling document change. URI: file:///home/runner/Builder/director/Director.java
+!STACK 0
+org.eclipse.text.edits.MalformedTreeException: End position lies outside document range
+	at org.eclipse.text.edits.TextEditProcessor.checkIntegrityDo(TextEditProcessor.java:180)
+	at org.eclipse.text.edits.TextEdit.dispatchCheckIntegrity(TextEdit.java:746)
+	at org.eclipse.text.edits.TextEditProcessor.performEdits(TextEditProcessor.java:153)
+	at org.eclipse.text.edits.TextEdit.apply(TextEdit.java:714)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleChanged(BaseDocumentLifeCycleHandler.java:430)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$6.run(BaseDocumentLifeCycleHandler.java:325)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didChange(BaseDocumentLifeCycleHandler.java:322)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didChange(JDTLanguageServer.java:766)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:48.628
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:36:48.630
+!MESSAGE Error while handling document change. URI: file:///home/runner/Builder/director/Director.java
+!STACK 0
+org.eclipse.text.edits.MalformedTreeException: End position lies outside document range
+	at org.eclipse.text.edits.TextEditProcessor.checkIntegrityDo(TextEditProcessor.java:180)
+	at org.eclipse.text.edits.TextEdit.dispatchCheckIntegrity(TextEdit.java:746)
+	at org.eclipse.text.edits.TextEditProcessor.performEdits(TextEditProcessor.java:153)
+	at org.eclipse.text.edits.TextEdit.apply(TextEdit.java:714)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleChanged(BaseDocumentLifeCycleHandler.java:430)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$6.run(BaseDocumentLifeCycleHandler.java:325)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2315)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didChange(BaseDocumentLifeCycleHandler.java:322)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didChange(JDTLanguageServer.java:766)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:48.922
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:48.979
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.040
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.179
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.279
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.379
+!MESSAGE Reconciled 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.386
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.416
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.522
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.581
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:36:49.678
+!MESSAGE Index out of bounds
+!STACK 1
+Java Model Exception: Error in Java Model (code 980): Index out of bounds
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:162)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:977)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2024-01-20 14:36:49.678
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.685
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.779
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.792
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.878
+!MESSAGE Reconciled 1. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:49.919
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:50.019
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:50.487
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:50.487
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:50.488
+!MESSAGE Validated 1. Took 66 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:50.801
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:51.896
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:36:52.371
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:42.764
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:42.854
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.104
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.151
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.202
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.496
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.580
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.582
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.678
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.680
+!MESSAGE Reconciled 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.728
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.791
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.792
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.808
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.882
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.887
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.890
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:43.946
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.015
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.080
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.134
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.183
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.280
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.382
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.590
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.794
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.894
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:44.998
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.091
+!MESSAGE Validated 1. Took 400 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.279
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.303
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.379
+!MESSAGE Reconciled 1. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.537
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.584
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:45.679
+!MESSAGE Reconciled 1. Took 53 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.284
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.285
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.285
+!MESSAGE Validated 1. Took 155 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.285
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.383
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.510
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.682
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:46.778
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.375
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.463
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.871
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.934
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.935
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:47.936
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:48.908
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:49.369
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:50.861
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:50.949
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:51.369
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:51.370
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:51.370
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.166
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.221
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.292
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.680
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.684
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.692
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.781
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.888
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.894
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.902
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.980
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:52.982
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.189
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.233
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.713
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.714
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.715
+!MESSAGE Validated 1. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:53.996
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:54.475
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:54.476
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:54.493
+!MESSAGE Validated 1. Took 46 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:55.468
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.463
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.522
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.594
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.602
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.679
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.779
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.783
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.895
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.899
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:57.987
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:58.458
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:58.459
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:58.460
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:59.554
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:38:59.982
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:00.072
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:00.551
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:00.578
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:00.579
+!MESSAGE Validated 1. Took 55 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.327
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.416
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.509
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.943
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.944
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:01.948
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:02.875
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:05.289
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:05.377
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:05.850
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:05.850
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:05.851
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:06.295
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:06.485
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:06.921
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.116
+!MESSAGE Reconciled 1. Took 110 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.783
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.785
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.785
+!MESSAGE Validated 1. Took 206 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.786
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.788
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.789
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.790
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.878
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.897
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:07.982
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.002
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.011
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.021
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.082
+!MESSAGE Reconciled 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.592
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.592
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.593
+!MESSAGE Validated 1. Took 110 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:08.984
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:09.415
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:09.581
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.117
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.118
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.119
+!MESSAGE Validated 1. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.385
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.770
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:10.985
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.443
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.531
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.554
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.600
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.704
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:12.758
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.074
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.279
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.280
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.281
+!MESSAGE Validated 1. Took 120 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.879
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.980
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:13.995
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.082
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.282
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.410
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.499
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.500
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.500
+!MESSAGE Validated 1. Took 118 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.588
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.604
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.790
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:14.983
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:15.833
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:15.871
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:15.964
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:16.052
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:16.520
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:16.521
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:16.521
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.411
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.502
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.564
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.588
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.681
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.732
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.772
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.842
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:17.883
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.208
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.251
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.688
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.696
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.696
+!MESSAGE Validated 1. Took 43 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.754
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.799
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:18.817
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.286
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.287
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.287
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.288
+!MESSAGE Validated 1. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.293
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.296
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.379
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.882
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.883
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:19.884
+!MESSAGE Validated 1. Took 102 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.137
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.179
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.188
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.783
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.878
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:20.879
+!MESSAGE Validated 1. Took 294 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.897
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.900
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.980
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.981
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.983
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:23.989
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.078
+!MESSAGE Reconciled 1. Took 53 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.211
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.226
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.284
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.784
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.784
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:24.785
+!MESSAGE Validated 1. Took 95 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:25.780
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.602
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.656
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.660
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.689
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.723
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.763
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.832
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.844
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.945
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:26.984
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.023
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.039
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.079
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.119
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.216
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.222
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.599
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.600
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:27.607
+!MESSAGE Validated 1. Took 86 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:28.759
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:30.387
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:36.406
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:39.056
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:39.250
+!MESSAGE >> document/definition
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.131
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.224
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.365
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.453
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.814
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:41.855
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.307
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.309
+!MESSAGE Duplicate method constructSedanCar(IBuilder) in type Director is of type DuplicateMethod
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.326
+!MESSAGE Duplicate method constructSedanCar(IBuilder) in type Director is of type DuplicateMethod
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.328
+!MESSAGE 3 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.329
+!MESSAGE Validated 1. Took 73 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:42.822
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:43.504
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:49.563
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.571
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.622
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.635
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.682
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.798
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.809
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.814
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.887
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:50.939
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.066
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.107
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.126
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.178
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.279
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.319
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.378
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.407
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.421
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.479
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.591
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.623
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.981
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.995
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:51.997
+!MESSAGE Validated 1. Took 107 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:52.462
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:53.079
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:58.894
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.108
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.586
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.906
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.910
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.978
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:39:59.985
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.180
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.201
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.242
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.832
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.833
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:00.834
+!MESSAGE Validated 1. Took 141 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:01.071
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:01.108
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:01.529
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:01.530
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:01.530
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:02.704
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:04.555
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.185
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.225
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.339
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.344
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.431
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:06.878
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.180
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.180
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.181
+!MESSAGE Validated 1. Took 348 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.186
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.239
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.290
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.560
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.917
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.918
+!MESSAGE 2 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:07.919
+!MESSAGE Validated 1. Took 227 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.250
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.338
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.526
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.828
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.850
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:08.859
+!MESSAGE Validated 1. Took 113 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.078
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.117
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.139
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.255
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.434
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.589
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.669
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.670
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.689
+!MESSAGE Validated 1. Took 166 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.694
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.783
+!MESSAGE Reconciled 1. Took 53 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:09.954
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:10.081
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:10.312
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:10.534
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:10.536
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:10.543
+!MESSAGE Validated 1. Took 252 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:11.421
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:12.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:12.272
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:12.796
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:12.797
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:12.797
+!MESSAGE Validated 1. Took 72 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:13.747
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:17.105
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:17.669
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:17.757
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:17.894
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.178
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.279
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.280
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.281
+!MESSAGE Validated 1. Took 104 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.283
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.379
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.379
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.812
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.812
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:18.812
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:19.778
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:21.139
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:21.522
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.194
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.235
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.390
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.707
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.791
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.792
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.792
+!MESSAGE Validated 1. Took 114 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.794
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.796
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:22.831
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:23.398
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:23.398
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:23.400
+!MESSAGE Validated 1. Took 118 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.279
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.282
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.388
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.927
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.978
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:24.979
+!MESSAGE Validated 1. Took 190 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:25.012
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:25.782
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.030
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.182
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.616
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.617
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.883
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.883
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:34.883
+!MESSAGE Validated 2. Took 299 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:35.050
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:35.307
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:39.559
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:39.599
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:39.870
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:39.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:39.980
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:40:40.065
+!MESSAGE BadLocationException
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.offsetByLine(TreeLineTracker.java:335)
+	at org.eclipse.jface.text.TreeLineTracker.getLineOffset(TreeLineTracker.java:1111)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOffset(AbstractDocument.java:877)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOffset(SynchronizableDocument.java:323)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:85)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:69)
+	at org.eclipse.jdt.ls.core.internal.corrections.DiagnosticsHelper.getEndOffset(DiagnosticsHelper.java:38)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:131)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:40:40.066
+!MESSAGE BadLocationException
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.offsetByLine(TreeLineTracker.java:335)
+	at org.eclipse.jface.text.TreeLineTracker.getLineOffset(TreeLineTracker.java:1111)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:161)
+	at org.eclipse.jface.text.AbstractDocument.getLineOffset(AbstractDocument.java:877)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOffset(SynchronizableDocument.java:323)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:85)
+	at org.eclipse.jdt.ls.core.internal.handlers.JsonRpcHelpers.toOffset(JsonRpcHelpers.java:69)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:972)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.085
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.129
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.248
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.290
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.716
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.718
+!MESSAGE 4 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.793
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.794
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:40.794
+!MESSAGE Validated 2. Took 103 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.468
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.894
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.894
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.978
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.984
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.986
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:41.987
+!MESSAGE Validated 2. Took 118 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:42.086
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:40:42.279
+!MESSAGE Index out of bounds
+!STACK 1
+Java Model Exception: Error in Java Model (code 980): Index out of bounds
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:162)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:977)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2024-01-20 14:40:42.279
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:43.474
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:47.590
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:48.793
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:48.882
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:48.972
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2024-01-20 14:40:49.153
+!MESSAGE Index out of bounds
+!STACK 1
+Java Model Exception: Error in Java Model (code 980): Index out of bounds
+	at org.eclipse.jdt.internal.core.Openable.codeSelect(Openable.java:162)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:389)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeSelect(CompilationUnit.java:382)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementsAtSelection(JDTUtils.java:977)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.findElementAtSelection(JDTUtils.java:958)
+	at org.eclipse.jdt.ls.core.internal.text.correction.SourceAssistProcessor.getSourceActionCommands(SourceAssistProcessor.java:111)
+	at org.eclipse.jdt.ls.core.internal.handlers.CodeActionHandler.getCodeActionCommands(CodeActionHandler.java:210)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.lambda$15(JDTLanguageServer.java:648)
+	at org.eclipse.jdt.ls.core.internal.BaseJDTLanguageServer.lambda$0(BaseJDTLanguageServer.java:75)
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.jdt.core 4 980 2024-01-20 14:40:49.153
+!MESSAGE Index out of bounds
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.300
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.301
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.387
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.387
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.392
+!MESSAGE Validated 2. Took 102 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.403
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.494
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:49.498
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.087
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.089
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.203
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.278
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.281
+!MESSAGE Validated 2. Took 293 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.283
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.290
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.318
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.380
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.385
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:50.515
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.280
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.297
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.386
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.388
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.498
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.498
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.499
+!MESSAGE Validated 2. Took 219 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.500
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.503
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:51.592
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.019
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.020
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.187
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.191
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.193
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.193
+!MESSAGE Validated 2. Took 199 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.304
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.325
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.382
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.675
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.745
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.788
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.800
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.807
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.979
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:52.986
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.026
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.109
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.191
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.199
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.202
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.208
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.249
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.674
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.675
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.724
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.725
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.725
+!MESSAGE Validated 2. Took 71 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.780
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:53.828
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.174
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.252
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.252
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.270
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.270
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:54.271
+!MESSAGE Validated 2. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.304
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.343
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.357
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.359
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.604
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.760
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.760
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.791
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.795
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.798
+!MESSAGE Validated 2. Took 54 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:55.933
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.046
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.093
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.124
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.178
+!MESSAGE Reconciled 1. Took 47 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.180
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.324
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.378
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.810
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.812
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.991
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.993
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:56.994
+!MESSAGE Validated 2. Took 269 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.510
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.581
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.593
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.594
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.605
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.639
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.793
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.808
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:57.989
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.081
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.091
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.191
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.265
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.266
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.267
+!MESSAGE Validated 2. Took 226 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.307
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.328
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.335
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.419
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.536
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.538
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.579
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.614
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.616
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.692
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:58.923
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.119
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.121
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.184
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.274
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.304
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.305
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.305
+!MESSAGE Validated 2. Took 210 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.404
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.818
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.878
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.989
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.990
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:40:59.994
+!MESSAGE Validated 2. Took 189 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:00.808
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:01.438
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:01.520
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:01.608
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.028
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.028
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.042
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.043
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.044
+!MESSAGE Validated 2. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:02.527
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.016
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.041
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.055
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.073
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.110
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.405
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.457
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.683
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.730
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:03.965
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.054
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.520
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.521
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.592
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.592
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.593
+!MESSAGE Validated 2. Took 88 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:04.957
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:05.505
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.022
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.073
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.166
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.595
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.596
+!MESSAGE The value of the local variable director is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.597
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.690
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.690
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:09.691
+!MESSAGE Validated 2. Took 122 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:10.096
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:11.323
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:11.720
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:11.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.082
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.526
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.528
+!MESSAGE The value of the local variable director is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.530
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.594
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.595
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:12.595
+!MESSAGE Validated 2. Took 110 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:13.108
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:13.909
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:16.255
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:16.430
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:16.517
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:16.781
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:16.819
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.297
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.298
+!MESSAGE The value of the local variable director is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.299
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.313
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.314
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.315
+!MESSAGE Validated 2. Took 35 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:17.768
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:18.310
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.281
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.334
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.414
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.453
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.866
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.868
+!MESSAGE The value of the local variable director is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.868
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.893
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.897
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:19.898
+!MESSAGE Validated 2. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:20.982
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.021
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.049
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.214
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.299
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.368
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.536
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.808
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.816
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.876
+!MESSAGE Reconciled 1. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:21.962
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.051
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.122
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.210
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.276
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.315
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.746
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.746
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.782
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.782
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.782
+!MESSAGE Validated 2. Took 66 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.811
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.883
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:22.985
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.089
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.104
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.194
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.280
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.323
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.503
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.605
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.692
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.694
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:23.759
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.178
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.182
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.280
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.281
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.281
+!MESSAGE Validated 2. Took 120 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:24.710
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:25.956
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:26.158
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:26.223
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:26.304
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:26.632
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:26.680
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.103
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.104
+!MESSAGE The value of the local variable director is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.104
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.118
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.119
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:27.119
+!MESSAGE Validated 2. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:28.837
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:28.947
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.248
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.287
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.307
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.779
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.779
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.892
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.894
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:34.895
+!MESSAGE Validated 2. Took 205 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.096
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.098
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.103
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.105
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.144
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.311
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.333
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.335
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.416
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.434
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.439
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.479
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.944
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.944
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.956
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.957
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:35.957
+!MESSAGE Validated 2. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.201
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.279
+!MESSAGE Reconciled 1. Took 40 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.787
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.788
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.803
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.804
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:36.804
+!MESSAGE Validated 2. Took 123 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:37.909
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:41.970
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.009
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.021
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.022
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.437
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.437
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.449
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.449
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.450
+!MESSAGE Validated 2. Took 39 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.506
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.552
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.559
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.568
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.733
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.769
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.806
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:42.887
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.075
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.078
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.166
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.386
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.441
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.489
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.541
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.547
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.618
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.620
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:43.700
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:44.128
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:44.130
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:44.191
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:44.192
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:44.194
+!MESSAGE Validated 2. Took 92 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:45.307
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:51.944
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:51.994
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.004
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.006
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.241
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.285
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.410
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.412
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.418
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.579
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.596
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.617
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.997
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:52.998
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.001
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.044
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.145
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.210
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.249
+!MESSAGE Reconciled 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.328
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.518
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.726
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.727
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.806
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.814
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:53.829
+!MESSAGE Validated 2. Took 129 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:54.819
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:54.871
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:54.918
+!MESSAGE Reconciled 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:55.350
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:55.352
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:55.404
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:55.407
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:55.408
+!MESSAGE Validated 2. Took 87 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:56.273
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:56.314
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:56.407
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:56.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:56.775
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.240
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.241
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.278
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.279
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.283
+!MESSAGE Validated 2. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:57.695
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:41:58.925
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:01.965
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.004
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.022
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.231
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.280
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.282
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.301
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.380
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.516
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.605
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:02.629
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.077
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.080
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.182
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.183
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.184
+!MESSAGE Validated 2. Took 128 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.338
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.757
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.757
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.788
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.788
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:03.791
+!MESSAGE Validated 2. Took 52 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:04.976
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.066
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.127
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.141
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.181
+!MESSAGE Reconciled 1. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.380
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.382
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.469
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.489
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.581
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.594
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.609
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:05.679
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.112
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.119
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.202
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.203
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.203
+!MESSAGE Validated 2. Took 121 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.355
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.774
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.778
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.811
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.811
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:06.812
+!MESSAGE Validated 2. Took 55 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:07.967
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:41.752
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:44.944
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.182
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.220
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.322
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.361
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.790
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.791
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.804
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.805
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:45.805
+!MESSAGE Validated 2. Took 41 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:46.198
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:46.255
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:46.288
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.089
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.094
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.183
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.183
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.184
+!MESSAGE Validated 2. Took 263 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.478
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.482
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.483
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.488
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.489
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.490
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.491
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.492
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.580
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.691
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.698
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.878
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.996
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:47.996
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:48.103
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:48.104
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:48.106
+!MESSAGE Validated 2. Took 125 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:48.717
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:49.074
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:50.625
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:50.662
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:51.080
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:51.081
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:51.098
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:51.099
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:51.100
+!MESSAGE Validated 2. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.204
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.292
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.309
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.357
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.484
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.571
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:52.925
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.035
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.036
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.045
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.046
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.046
+!MESSAGE Validated 2. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.227
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.240
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:53.416
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.104
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.242
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.282
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.752
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.753
+!MESSAGE The value of the local variable car is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.753
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.782
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.783
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:54.784
+!MESSAGE Validated 2. Took 50 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:55.908
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:57.729
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:57.816
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.287
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.287
+!MESSAGE The value of the local variable car is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.287
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.299
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.378
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.378
+!MESSAGE Validated 2. Took 112 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.419
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.427
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.709
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.778
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.898
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.898
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.981
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:58.999
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:59.000
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:59.000
+!MESSAGE Validated 2. Took 123 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:42:59.987
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.532
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.534
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.586
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.663
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.666
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.719
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:00.754
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:01.280
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:01.281
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:01.292
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:01.378
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:01.380
+!MESSAGE Validated 2. Took 258 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:02.306
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:02.554
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:02.972
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.318
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.406
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.880
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.881
+!MESSAGE The value of the local variable car is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.882
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.903
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.903
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:03.904
+!MESSAGE Validated 2. Took 45 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:04.908
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:05.691
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:05.747
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:05.792
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.085
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.087
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.089
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.129
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.295
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.600
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.601
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.613
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.613
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.613
+!MESSAGE Validated 2. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.901
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.954
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.976
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:06.990
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.155
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.583
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.584
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.683
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.684
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:07.684
+!MESSAGE Validated 2. Took 243 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:08.450
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.309
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.372
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.425
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.446
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.489
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.578
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.587
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.619
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:10.657
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.095
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.096
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.132
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.134
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.135
+!MESSAGE Validated 2. Took 75 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:11.610
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.086
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.138
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.288
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.604
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.604
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.733
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.735
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:12.736
+!MESSAGE Validated 2. Took 195 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:13.926
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:14.615
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:14.674
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:14.675
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:14.709
+!MESSAGE Reconciled 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.025
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.064
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.150
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.189
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.210
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.212
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.613
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.614
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.685
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.685
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.689
+!MESSAGE Validated 2. Took 98 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.784
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:15.824
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.395
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.397
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.510
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.510
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.511
+!MESSAGE Validated 2. Took 286 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.747
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.807
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.829
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.887
+!MESSAGE Reconciled 1. Took 52 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.890
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.978
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:16.979
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.018
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.058
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.063
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.104
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.170
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.239
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.246
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.256
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.323
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.422
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.428
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.459
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.501
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.602
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.610
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.690
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.780
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.783
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.795
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.882
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.979
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.980
+!MESSAGE Reconciled 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.992
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:17.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.078
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.079
+!MESSAGE Reconciled 1. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.178
+!MESSAGE Reconciled 1. Took 61 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.179
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.180
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.198
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.279
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.303
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.378
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:18.380
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:19.786
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:19.787
+!MESSAGE 2 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:19.994
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:19.997
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:19.998
+!MESSAGE Validated 2. Took 1199 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.288
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.292
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.293
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.302
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.303
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.304
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.305
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.378
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.381
+!MESSAGE Reconciled 1. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.383
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.384
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.444
+!MESSAGE Reconciled 1. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.989
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:20.990
+!MESSAGE 3 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:21.007
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:21.008
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:21.078
+!MESSAGE Validated 2. Took 233 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:21.248
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:24.842
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:42.787
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.079
+!MESSAGE Reconciled 1. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.551
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.552
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.695
+!MESSAGE begin problem for /Truck.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.698
+!MESSAGE 2 problems reported for /Truck.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.780
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.782
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.783
+!MESSAGE Validated 3. Took 254 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:43.793
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:45.592
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:45.690
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:45.781
+!MESSAGE Reconciled 1. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.208
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.209
+!MESSAGE 1 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.306
+!MESSAGE begin problem for /Truck.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.307
+!MESSAGE The value of the field Truck.carType is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.314
+!MESSAGE The value of the field Truck.seats is not used is of type UnusedPrivateField
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.315
+!MESSAGE 3 problems reported for /Truck.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.388
+!MESSAGE begin problem for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.390
+!MESSAGE 1 problems reported for /Director.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:46.390
+!MESSAGE Validated 3. Took 208 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:47.087
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:47.380
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:54.378
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2024-01-20 14:43:58.006
+!MESSAGE >> document/hover
